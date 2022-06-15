@@ -1,0 +1,11 @@
+Model Information:
+* title:	Playful Dog
+* source:	https://sketchfab.com/3d-models/playful-dog-8447d936455f44b982b3489e0df686cc
+* author:	Wr_titan (https://sketchfab.com/pitchayut.iq)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Playful Dog" (https://sketchfab.com/3d-models/playful-dog-8447d936455f44b982b3489e0df686cc) by Wr_titan (https://sketchfab.com/pitchayut.iq) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
