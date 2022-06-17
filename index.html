@@ -1,57 +1,385 @@
-<!doctype HTML>
-<html>
-<style lang="en" type="text/css" id="night-mode-pro-style">
-    body {
-        background-color: transparent;
-    }
-</style>
-<link type="text/css" rel="stylesheet" id="night-mode-pro-link">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <title>AR Learn</title>
-    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="shortcut icon" href="https://img.icons8.com/external-glyph-on-circles-amoghdesign/344/external-abc-education-vol-02-glyph-on-circles-amoghdesign.png" type="image/x-icon">
-    <!-- include A-Frame obviously -->
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <!-- include ar.js for A-Frame -->
-    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Learnify</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="Assets/css/bootstrap.min.css" />
+
+	<!-- Owl Carousel -->
+	<link type="text/css" rel="stylesheet" href="Assets/css/owl.carousel.css" />
+	<link type="text/css" rel="stylesheet" href="Assets/css/owl.theme.default.css" />
+
+	<!-- Magnific Popup -->
+	<link type="text/css" rel="stylesheet" href="Assets/css/magnific-popup.css" />
+
+	<!-- Font Awesome Icon -->
+	<link rel="stylesheet" href="Assets/css/font-awesome.min.css">
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="Assets/css/style.css" />
 </head>
 
 <body>
-    <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
-        <!-- include assets like 3D models and give them an id to use later -->
-        <a-assets>
-            <a-assets-item id="apple"
-                src="./alphabet/apple/scene.gltf">
-            </a-assets-item>
-            <a-assets-item id="ball"
-                src="./alphabet/ball/scene.gltf">
-            </a-assets-item>
-            <a-assets-item id="cat"
-                src="./alphabet/cat/scene.gltf">
-            </a-assets-item>
-            <a-assets-item id="dog"
-                src="./alphabet/dog/scene.gltf">
-            </a-assets-item>
-        </a-assets>
-        <!-- recognise different barcode markers ad show digital objects - box/sphere/cylinder/3D-model/image/video/anything -->
-        <a-marker type="barcode" value="0">
-            <a-entity position="0 0 0" scale="0.01 0.01 0.01" rotation="0 90 0" gltf-model="#apple"></a-entity>
-        </a-marker>
-        <a-marker type="barcode" value="1">
-            <a-entity position="0 0 0" scale="0.1 0.1 0.1" rotation="0 90 0" gltf-model="#ball"></a-entity>
-        </a-marker>
-        <a-marker type="barcode" value="2">
-            <a-entity position="0 0 0" scale="1.5 1.5 1.5" rotation="0 90 0" gltf-model="#cat"></a-entity>
-        </a-marker>
-        <a-marker type="barcode" value="3">
-            <a-entity position="0 0 0" scale="1.5 1.5 1.5" rotation="0 90 0" gltf-model="#dog"></a-entity>
-        </a-marker>
-        
-        <!-- adding the camera -->
-        <a-entity camera></a-entity>
-    </a-scene>
+	<!-- Header -->
+	<header id="home">
+		<!-- Background Image -->
+		<div class="bg-img" style="background-image: url('Assets/img/learning.jpg');">
+			<div class="overlay"></div>
+		</div>
+		<!-- /Background Image -->
+
+		<!-- Nav -->
+		<nav id="nav" class="navbar nav-transparent">
+			<div class="container">
+
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a href="index.html">
+							<img class="logo" src="Assets/img/learnify.png" alt="logo">
+							<img class="logo-alt" src="Assets/img/learnify-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
+
+					<!-- Collapse nav button -->
+					<div class="nav-collapse">
+						<span></span>
+					</div>
+					<!-- /Collapse nav button -->
+				</div>
+
+				<!--  Main navigation  -->
+				<ul class="main-nav nav navbar-nav navbar-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#portfolio">Categories</a></li>
+					<li><a href="#service">Services</a></li>
+					<li><a href="#features">Why Us?</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+				<!-- /Main navigation -->
+
+			</div>
+		</nav>
+		<!-- /Nav -->
+
+		<!-- home wrapper -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
+
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+							<h1 class="white-text">A new way to learn</h1>
+							<p class="white-text">Welcome to learnify where a new learning era awaits!
+							</p>
+							<button class="white-btn"><a href="#portfolio">Get Started!</a></button>
+							<button class="main-btn"><a href="howto.html" style="color:#ffff">Guide</a></button>
+						</div>
+					</div>
+					<!-- /home content -->
+
+				</div>
+			</div>
+		</div>
+		<!-- /home wrapper -->
+
+	</header>
+	<!-- /Header -->
+
+	<!-- About -->
+	<div id="about" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">Welcome to Learnify</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>For Every Class</h3>
+						<p></p>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-magic"></i>
+						<h3>Awesome Features</h3>
+						<p></p>
+					</div>
+				</div>
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Fully Responsive</h3>
+						<p></p>
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /About -->
+
+
+	<!-- Portfolio -->
+	<div id="portfolio" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section header -->
+				<div class="section-header text-center">
+					<h2 class="title">What do you want to learn?</h2>
+				</div>
+				<!-- /Section header -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="Assets/img/alphabets.png" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Alphabets</h3>
+						<div class="work-link">
+							<a href="alphabets.html" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="Assets/img/shapes.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Mathematics</h3>
+						<div class="work-link">
+							<a href="shapes.html" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="Assets/img/molecules.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Chemistry</h3>
+						<div class="work-link">
+							<a href="chemistry.html" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+				<!-- Work -->
+				<div class="col-md-4 col-xs-6 work">
+					<img class="img-responsive" src="Assets/img/body.jpg" alt="">
+					<div class="overlay"></div>
+					<div class="work-content">
+						<span>Category</span>
+						<h3>Biology</h3>
+						<div class="work-link">
+							<a href="biology.html" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+					</div>
+				</div>
+				<!-- /Work -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Portfolio -->
+
+
+	<!-- Why Choose Us -->
+	<div id="features" class="section md-padding bg-grey">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- why choose us content -->
+				<div class="col-md-6">
+					<div class="section-header">
+						<h2 class="title">Why Choose Us</h2>
+					</div>
+					<p>Learnify is a great platform where students from varied age groups can learn
+					something without a lot of effort.</p>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Accessible on a single touch.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Easy to use.</p>
+					</div>
+					<div class="feature">
+						<i class="fa fa-check"></i>
+						<p>Fun.</p>
+					</div>
+				</div>
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Why Choose Us -->
+
+
+	<!-- Numbers -->
+	
+
+	<!-- Contact -->
+	<div id="contact" class="section md-padding">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<!-- Section-header -->
+				<div class="section-header text-center">
+					<h2 class="title">Get in touch</h2>
+				</div>
+				<!-- /Section-header -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-phone"></i>
+						<h3>Phone</h3>
+						<p>+91-7908017548</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-envelope"></i>
+						<h3>Email</h3>
+						<p>ajaypaswan001ap@gmail.com</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+				<!-- contact -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<i class="fa fa-map-marker"></i>
+						<h3>Address</h3>
+						<p>National Institute of Technology</p>
+					</div>
+				</div>
+				<!-- /contact -->
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</div>
+	<!-- /Contact -->
+
+
+	<!-- Footer -->
+	<footer id="footer" class="sm-padding bg-dark">
+
+		<!-- Container -->
+		<div class="container">
+
+			<!-- Row -->
+			<div class="row">
+
+				<div class="col-md-12">
+
+					<!-- footer logo -->
+					<div class="footer-logo">
+						<a href="index.html"><img src="Assets/img/learnify-alt.png" alt="logo"></a>
+					</div>
+					<!-- /footer logo -->
+				</div>
+
+			</div>
+			<!-- /Row -->
+
+		</div>
+		<!-- /Container -->
+
+	</footer>
+	<!-- /Footer -->
+
+	<!-- Back to top -->
+	<div id="back-to-top"></div>
+	<!-- /Back to top -->
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!-- /Preloader -->
+
+	<!-- jQuery Plugins -->
+	<script type="text/javascript" src="Assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="Assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="Assets/js/jquery.magnific-popup.js"></script>
+	<script type="text/javascript" src="Assets/js/main.js"></script>
+
 </body>
 
 </html>

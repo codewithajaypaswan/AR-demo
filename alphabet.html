@@ -1,0 +1,57 @@
+<!doctype HTML>
+<html>
+<style lang="en" type="text/css" id="night-mode-pro-style">
+    body {
+        background-color: transparent;
+    }
+</style>
+<link type="text/css" rel="stylesheet" id="night-mode-pro-link">
+
+<head>
+    <title>AR Learn Alphabets</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/external-glyph-on-circles-amoghdesign/344/external-abc-education-vol-02-glyph-on-circles-amoghdesign.png" type="image/x-icon">
+    <!-- include A-Frame obviously -->
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    <!-- include ar.js for A-Frame -->
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+</head>
+
+<body>
+    <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+        <!-- include assets like 3D models and give them an id to use later -->
+        <a-assets>
+            <a-assets-item id="apple"
+                src="./alphabet/apple/scene.gltf">
+            </a-assets-item>
+            <a-assets-item id="ball"
+                src="./alphabet/ball/scene.gltf">
+            </a-assets-item>
+            <a-assets-item id="cat"
+                src="./alphabet/cat/scene.gltf">
+            </a-assets-item>
+            <a-assets-item id="dog"
+                src="./alphabet/dog/scene.gltf">
+            </a-assets-item>
+        </a-assets>
+        <!-- recognise different barcode markers ad show digital objects - box/sphere/cylinder/3D-model/image/video/anything -->
+        <a-marker type="barcode" value="0">
+            <a-entity position="0 0 0" scale="0.01 0.01 0.01" rotation="0 90 0" gltf-model="#apple"></a-entity>
+        </a-marker>
+        <a-marker type="barcode" value="1">
+            <a-entity position="0 0 0" scale="0.1 0.1 0.1" rotation="0 90 0" gltf-model="#ball"></a-entity>
+        </a-marker>
+        <a-marker type="barcode" value="2">
+            <a-entity position="0 0 0" scale="1.5 1.5 1.5" rotation="0 90 0" gltf-model="#cat"></a-entity>
+        </a-marker>
+        <a-marker type="barcode" value="3">
+            <a-entity position="0 0 0" scale="1.5 1.5 1.5" rotation="0 90 0" gltf-model="#dog"></a-entity>
+        </a-marker>
+        
+        <!-- adding the camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
