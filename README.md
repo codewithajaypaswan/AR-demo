@@ -34,14 +34,16 @@ everything should be embedded in <a-scence> tag
     <a-entity position="0 0 0" scale="0.01 0.01 0.01" rotation="0 90 0" gltf-model="#apple"></a-entity>
 </a-marker>
 ```
-
-![cat_jpg](https://user-images.githubusercontent.com/60291173/175403361-a93aabb1-b87c-4b22-a794-cc65862d9991.jpeg)
-![Dog_jpg](https://user-images.githubusercontent.com/60291173/175403378-0dae4eb7-3fff-4070-99ba-abc44b50b228.jpeg)
-![Dog2_jpg](https://user-images.githubusercontent.com/60291173/175403384-11853fa7-d594-45c3-aa54-7373e0f26f29.jpeg)
-
 https://user-images.githubusercontent.com/60291173/175403390-939ddb9e-13e8-4303-9be4-b246fa1f60ed.mp4
 
+C for Cat and there you go Cat model
+![cat_jpg](https://user-images.githubusercontent.com/60291173/175403361-a93aabb1-b87c-4b22-a794-cc65862d9991.jpeg)
+Dog model
+![Dog_jpg](https://user-images.githubusercontent.com/60291173/175403378-0dae4eb7-3fff-4070-99ba-abc44b50b228.jpeg)
+![Dog2_jpg](https://user-images.githubusercontent.com/60291173/175403384-11853fa7-d594-45c3-aa54-7373e0f26f29.jpeg)
+Apple model
 ![apple_jpg](https://user-images.githubusercontent.com/60291173/175403395-f69be50e-5d1e-4585-bfb1-79f791e97733.jpeg)
+Ball model
 ![ball_jpg](https://user-images.githubusercontent.com/60291173/175403402-6e3a1510-2fca-4450-a28a-3aea6680cf4b.jpeg)
 
 
